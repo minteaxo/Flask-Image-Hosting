@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jTransfer - Share Photos Online</title>
+    </head>
+    <body>
+        <form action="{{ url_for('uploadFile') }}" method="post" enctype="multipart/form-data">
+            <p><input type="file" name="file"></p>
+            <p><input type="submit" value="Upload"></p>
+        </form>
+    </body>
+</html>
