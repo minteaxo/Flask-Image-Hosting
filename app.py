@@ -44,4 +44,4 @@ def uploadFile():
         return abort(400, description = msgresponse.uploadEmptyPost)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
