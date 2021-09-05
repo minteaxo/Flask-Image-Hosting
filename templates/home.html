@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>jTransfer - Share Photos Online</title>
-    </head>
-    <body>
-        <form action="{{ url_for('uploadFile') }}" method="post" enctype="multipart/form-data">
-            <p><input type="file" name="file"></p>
-            <p><input type="submit" value="Upload"></p>
-        </form>
-    </body>
-</html>
+{% extends "layout.html" %}
+{% block title %}Share Photos Online{% endblock %}
+{% block head %}
+    {{ super() }}
+    <script type="text/javascript" src="static/js/script.js"></script>
+{% endblock %}
+{% block content %}
+    <form action="{{ url_for('uploadFile') }}" method="post" enctype="multipart/form-data">
+        <div class="file-upload">
+            <div class="file-select">
+                <div class="file-select-button" id="fileName">Choose File</div>
+                <div class="file-select-name" id="noFile">No file chosen...</div> 
+                <input type="file" name="file" id="chooseFile">
+            </div>
+        </div>
+        <input type="submit" id="upload-btn" value="Upload">
+    </form>
+{% endblock %}

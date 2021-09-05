@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}Upload Success{% endblock %}
+{% block content %}
+    <h1>Upload Success!</h1>
+    <p>URL: <a href="{{url}}">{{url}}</a></p>
+    {% if thumbnail64width %}
+    <p>64px thumbnail: <a href="{{thumbnail64width}}">{{thumbnail64width}}</a></p>
+    <img src="{{thumbnail64width}}"/>
+    <p>32px thumbnail: <a href="{{thumbnail32width}}">{{thumbnail32width}}</a></p>
+    <img src="{{thumbnail32width}}"/>
+    {% endif %}
+{% endblock %}
