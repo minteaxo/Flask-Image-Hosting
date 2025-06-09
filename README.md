@@ -8,7 +8,7 @@ You may customize the configuration settings in config.py.
 ## Run the app
 The main app is located at app.py.\
 Additionally you could try it on cloud, deployed to Heroku:\
-https://tranquil-ravine-80792.herokuapp.com/
+~~https://tranquil-ravine-80792.herokuapp.com/~~
 
 ## Release notes
 There are quite a lot of things to learn, so far I managed to complete Story 1 and Story 2.2 only.
